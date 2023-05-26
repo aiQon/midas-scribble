@@ -1,0 +1,24 @@
+[package]
+name = "midas-scribble"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "web-api"
+test = false
+bench = false
+
+[[bin]]
+name = "cli"
+test = false
+bench = false
+
+[dependencies]
+serde = { version = "1.0", features = [ "derive" ] }
+fast-xml = { version = "0.23.1", features = [ "serialize" ] }
+rust_decimal = "1.29.1"
+actix-web = "4"
+arguments = "0.7.1"
+ureq = "2.6.2"
